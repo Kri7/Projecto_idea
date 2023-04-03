@@ -12,13 +12,13 @@ public class Temperatura {
         System.out.println("Indique la temperatura");
         temperatura = consola.nextInt();
 
-        if (temperatura < 5) {
+        if (temperatura <= 5) {
             System.out.println("¡A esquiar!");
 
-        } else if (temperatura > 15 && temperatura < 25) {
+        } else if (temperatura >= 15 && temperatura < 25) {
             System.out.println("¡A la montaña!");
 
-        } else if (temperatura > 25) {
+        } else if (temperatura >= 25) {
             System.out.println("¡A la playa!");
 
         } else {
