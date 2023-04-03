@@ -1,8 +1,12 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Temperatura {
     public static void main(String[] args) {
-        int temperatura = 16;
+        Scanner consola = new Scanner(System.in);
+        System.out.println("Indique la temperatura");
+        int temperatura = consola.nextInt();
         if (temperatura < 5) {
             System.out.println("¡A esquiar!");
         } else if (temperatura > 15 && temperatura < 25) {
